@@ -1,0 +1,162 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* Center totally in the middle */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dfe1e5;
+    border-radius: 40px;
+    width: 582px;
+    height: 45px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.input-box:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+#magnifying-icon {
+    height: 18px;
+    width: 18px;
+    padding: 13px 12px 0 15px;
+}
+
+#voice-icon {
+    height: 20px;
+    width: 35px;
+    padding: 12px 10px 0 10px;
+}
+
+#search-bar {
+    border: none;
+    flex-grow: 1;
+    font-size: medium;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+/* Parent element for search buttons */
+.search-keys {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+/* The search buttons - Google Search, I'm Feeling Lucku */
+.search-key {
+    height: 35px;
+    padding: 0 12px 0 12px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+}
+
+.search-key:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Header */
+
+#header {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 32px;
+    margin-top: 20px;
+}
+
+.header-items {
+    margin-left: 23px;
+} 
+
+a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+#sign-in {
+    height: 33px;
+    width: 70px;
+    border: none;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#sign-in:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#footer-left-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer-right-end {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.footer-items {
+    margin-left: 30px;
+}
+
+@media (max-width: 650px) {
+
+    main {
+        margin-top: 85px;
+    }
+
+    .input-box {
+        width: auto;
+    }
+
+    #footer {
+        height: 70px;
+    }
+}
